@@ -1,0 +1,30 @@
+REM ============================================================================
+REM Pico HID Lab - Payload Educacional Benigno (Windows - Bloco de Notas)
+REM ============================================================================
+REM Objetivo: demonstrar, de forma segura e controlada, como um dispositivo
+REM USB HID pode simular um teclado fisico em um computador desbloqueado.
+REM
+REM Nota de compatibilidade ABNT2:
+REM Todo o texto abaixo usa apenas caracteres ASCII cujo scancode produz o
+REM mesmo simbolo em layouts US (KeyboardLayoutUS) e PT-BR (ABNT2), evitando
+REM acentos e pontuacoes divergentes (como dois-pontos, barras e aspas).
+REM ============================================================================
+
+DELAY 1500
+GUI r
+DELAY 600
+STRING notepad
+ENTER
+DELAY 1200
+STRINGLN === PICO HID LAB - DEMONSTRACAO EDUCACIONAL ===
+ENTER
+STRINGLN Este texto foi digitado automaticamente por um Raspberry Pi Pico
+STRINGLN operando como teclado USB HID (CircuitPython + adafruit_hid).
+ENTER
+STRINGLN Pontos-chave de seguranca deste laboratorio -
+STRINGLN 1. Nunca conecte dispositivos USB desconhecidos em sua estacao.
+STRINGLN 2. Sempre bloqueie a sessao (Win+L) ao se afastar do computador.
+STRINGLN 3. Use politicas de controle USB (USBGuard, GPO, Intune) e EDR.
+STRINGLN 4. Para editar o Pico com seguranca, conecte o jumper GP0-GND.
+ENTER
+STRINGLN Nenhuma alteracao no sistema foi realizada. Voce pode fechar esta janela.
